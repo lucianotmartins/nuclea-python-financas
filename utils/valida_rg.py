@@ -1,13 +1,22 @@
 import re
 
-def valida_rg(rg):
+def valida_rg():
 
     padrao_rg = r'^\d{2}\.\d{3}\.\d{3}-[0-9A-Za-z]$'
 
-    if re.match(padrao_rg, rg):
-        return True
-    else:
-        return False
+    while True:
+        rg = input("RG: ")
 
-rg = "12.345.678-x"
-print(valida_rg(rg))
+        if re.match(padrao_rg, rg):
+            return rg
+        else:
+            print("RG inválido. Tente novamente.")
+
+
+if __name__ == "__main__":
+    valida_rg()
+
+
+# Módulos: Arquivo Python
+# Pacotes: Conjunto de módulos
+# Bibliotecas: Conjunto de Pacotes e módulos. Exemplo: Math
