@@ -12,7 +12,6 @@ class TestStringMethods(unittest.TestCase):
         return fake.name()
 
 
-
     def test_cliente(self):
         nome = self.gerar_nome_fake()
         cpf = gera_cpf()
@@ -34,6 +33,6 @@ class TestStringMethods(unittest.TestCase):
         self.assertIn(cliente_esperado, clientes)
 
 
-
+# Criar teste para ordens. Deve validar se a criação da ação foi bem sucedida.
 
 
