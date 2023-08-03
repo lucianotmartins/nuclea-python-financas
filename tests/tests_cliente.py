@@ -5,7 +5,7 @@ from main import main, clientes
 from utils.valida_cpf import gera_cpf
 
 
-class TestStringMethods(unittest.TestCase):
+class TestClientes(unittest.TestCase):
 
     def gerar_nome_fake(self):
         fake = Faker()

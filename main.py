@@ -11,7 +11,7 @@ def main():
     validador = True
     while(validador):
         print("Seja bem vindo(a) ao sistema de gerenciamento de carteira de ações da Nuclea. Selecione uma das opções abaixo:")
-        print("1 - Cadastrar cliente")
+        print("1 - Cliente")
         #Deve alterar o "Cadastrar cliente" por "Cliente"  e exibir submenu com as devidas opções do CRUD.
         print("2 - Cadastrar ação")
         print("3 - Realizar análise da carteira")
@@ -21,19 +21,26 @@ def main():
         opcao = input("Digite a opção desejada: ")
 
         if opcao == "1":
-            print("Informe os dados do cliente: ")
-            cliente = {
-                "nome": formata_texto(input("Nome: ")),
-                "cpf": valida_cpf(),
-                "rg": valida_rg(),
-                "data_nascimento": valida_data_nascimento(),
-                "endereco": valida_cep(),
-                "numero_casa": input("Número casa: ")
-            }
-            clientes.append(cliente)
-            print(clientes)
-            #Corrigir o validador para evitar duplicidade do retorna_menu_principal
-            validador = retorna_menu_principal()
+            pass
+            # cliente = Cliente()
+            # print("1 - Cadastrar Cliente")
+            #     cliente.cadastrar_cliente()
+            # print("2 - Consultar Cliente")
+            # print("3 - Alterar Cliente")
+            # print("4 - Deletar Cliente")
+            # print("Informe os dados do cliente: ")
+            # cliente = {
+            #     "nome": formata_texto(input("Nome: ")),
+            #     "cpf": valida_cpf(),
+            #     "rg": valida_rg(),
+            #     "data_nascimento": valida_data_nascimento(),
+            #     "endereco": valida_cep(),
+            #     "numero_casa": input("Número casa: ")
+            # }
+            # clientes.append(cliente)
+            # print(clientes)
+            # #Corrigir o validador para evitar duplicidade do retorna_menu_principal
+            # validador = retorna_menu_principal()
 
         elif opcao == "2":
             pass
