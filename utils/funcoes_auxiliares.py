@@ -8,6 +8,7 @@ def retorna_menu_principal():
 
 
 def formata_texto(texto):
+    nome = input('Nome: ')
     nome_formatado = texto.title()
     return nome_formatado
 

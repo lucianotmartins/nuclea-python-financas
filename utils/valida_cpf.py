@@ -1,11 +1,10 @@
 from validate_docbr import CPF
 
 def valida_cpf():
-
     cpf_validador = CPF()
 
     while True:
-        cpf = input("CPF: ")
+        cpf = input("CPF: ").replace(".","").replace("-","")
         resultado_validacao = cpf_validador.validate(cpf)
 
         if(resultado_validacao):
@@ -13,7 +12,7 @@ def valida_cpf():
             return cpf_formatado
         else:
             print("CPF inválido, digite novamente: ")
-
+            continue
 
 def gera_cpf():
     cpf = CPF()
